@@ -59,6 +59,14 @@ The model achieved approximately **31.3% improvement in Brier Score** relative t
 
 ![ROC Curve](figures/roc_curve.png)
 
+### Model Validation
+#### ROC Curve
+![ROC Curve](figures/roc_curve.png)
+#### Risk Decile Analysis
+![Risk Decile Analysis](figures/risk_decile.png)
+#### Calibration Plot
+![Calibration Plot](figures/calibration_plot.png)
+
 ## Risk Ranking
 
 Observed default rates increase across predicted-risk deciles.
@@ -105,6 +113,8 @@ Train-vs-test PSI values were below **0.001** across all final-model features.
 ![PSI](figures/psi.png)
 
 Because the validation split is random rather than time-based, these PSI results demonstrate the **monitoring methodology only** and should not be interpreted as evidence of temporal stability.
+### Population Stability Index (PSI)
+![PSI](figures/psi.png)
 
 ## Reproducible Scoring
 
@@ -126,7 +136,7 @@ End-to-end scoring validation reproduced the original holdout results exactly:
 - `data/` — dataset documentation
 - `figures/` — model validation visualizations
 - `models/` — serialized model and preprocessing artifacts
-- `notebooks/01_eda.ipynb` — complete model-development notebook
+- `notebooks/01_credit_risk_modeling.ipynb` — complete model-development notebook
 - `outputs/` — validation tables and model-development outputs
 
 ## Limitations
