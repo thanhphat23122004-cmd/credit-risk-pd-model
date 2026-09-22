@@ -1,0 +1,10 @@
+decision_area,decision,rationale
+Target,"loan_status (1 = default, 0 = non-default)",Binary credit-risk outcome available in the dataset
+Development sample,80/20 stratified random train-test split,Preserves approximately equal default prevalence across samples
+Feature transformation,WoE transformations learned from TRAIN only,Reduces leakage and maintains consistent out-of-sample transformation
+Main model,6-feature WoE Logistic Regression,Interpretable baseline using borrower and loan characteristics
+Interest rate,Excluded from main model; sensitivity analysis only,Potential pricing / underwriting information
+Loan grade,Excluded from main model; sensitivity analysis only,Potential existing underwriting / risk information
+Missing employment length,Retained as a separate risk-information bin,Missingness showed different observed default behavior
+Validation,"Discrimination, calibration, rank ordering and diagnostic classification",Evaluate multiple dimensions rather than accuracy alone
+Monitoring,PSI framework plus performance and calibration monitoring,Demonstrate model monitoring framework

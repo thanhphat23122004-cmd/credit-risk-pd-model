@@ -1,0 +1,7 @@
+feature,psi,interpretation
+loan_intent_woe,0.0009345978520639249,Low shift
+person_income_woe,0.0004013286963580237,Low shift
+person_home_ownership_woe,0.00023773774783893313,Low shift
+person_emp_length_woe,0.0001794439471465605,Low shift
+loan_percent_income_woe,3.727657291989184e-05,Low shift
+previous_default_woe,0.0,Low shift

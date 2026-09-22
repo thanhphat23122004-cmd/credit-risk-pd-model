@@ -1,0 +1,8 @@
+limitation,implication
+Public dataset,Results may not represent a real bank portfolio or current lending population.
+Random validation split,Test performance does not demonstrate out-of-time stability.
+Observed target definition,loan_status is treated as the observed default outcome available in the dataset and is not a regulatory default definition.
+Potential underwriting variables,loan_int_rate and loan_grade may contain pricing or prior underwriting information and were therefore excluded from the main model.
+Probability calibration,"Aggregate calibration is strong, but several risk deciles show local calibration gaps."
+Limited model benchmarking,The project focuses on an interpretable WoE Logistic Regression rather than an exhaustive challenger-model exercise.
+Regulatory scope,The model is an educational credit-risk exercise and is not a Basel or IFRS 9 regulatory PD model.
